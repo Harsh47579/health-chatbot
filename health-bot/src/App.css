@@ -1,0 +1,229 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Navigation Hover & Active */
+.nav-item {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  background: #3d566e;
+}
+
+.nav-item.active {
+  background: #28a745;
+  font-weight: bold;
+}
+
+/* Icon Buttons */
+.icon-btn, .toggle-btn {
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.icon-btn:hover, .toggle-btn:hover {
+  background: #28a745;
+  color: white;
+}
+
+/* Dark Mode Styling */
+body.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark nav {
+  background: #111;
+}
+
+body.dark .nav-item:hover {
+  background: #333;
+}
+
+body.dark .active {
+  background: #28a745;
+}
+
+
+/* Bot Pulsing Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  nav div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/* ---- CHAT BUBBLES ---- */
+
+.bot {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 12px 16px;
+  max-width: 70%;
+  margin-bottom: 12px;
+  text-align: left;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.user {
+  background: #28a745;
+  color: white;
+  border-radius: 18px;
+  padding: 12px 16px;
+  max-width: 70%;
+  margin-bottom: 12px;
+  margin-left: auto;
+  text-align: left;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+/* ---- CARD UI REFINEMENT ---- */
+
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 15px;
+  max-height: 450px;
+}
+
+
+/* ---- QUICK ACTION CHIPS ---- */
+
+.chip {
+  display: inline-block;
+  background: #e9f8ec;
+  border: 1px solid #28a745;
+  color: #196c35;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.chip:hover {
+  background: #28a745;
+  color: white;
+}
+
+
+/* ---- INPUT FIELD IMPROVED ---- */
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.4);
+}
+
+
+/* ---- BUTTON STYLE ---- */
+
+button {
+  transition: 0.3s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+
+/* ---- DARK MODE CHAT ---- */
+
+body.dark .bot {
+  background: #2c2c2c;
+  color: white;
+}
+
+body.dark .user {
+  background: #28a745;
+  color: white;
+}
+
+body.dark .card {
+  background: #2a2a2a;
+  color: white;
+}
+
+body.dark .chip {
+  background: #333;
+  color: #28a745;
+  border-color: #28a745;
+}
+
+body.dark .chip:hover {
+  background: #28a745;
+  color: white;
+}
